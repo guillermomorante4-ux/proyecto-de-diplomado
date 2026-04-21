@@ -1,24 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
-
-    const btnPostular = document.querySelector(".cta-button");
+    const botonesPostular = document.querySelectorAll(".index-postular-btn");
     const convocatorias = document.querySelector("#convocatorias");
 
-    if (btnPostular && convocatorias) {
+    if (!convocatorias || botonesPostular.length === 0) {
+        return;
+    }
 
-        convocatorias.style.display = "none";
+    convocatorias.style.display = "none";
 
-        btnPostular.addEventListener("click", function (e) {
-            e.preventDefault();
+    botonesPostular.forEach(function (boton) {
+        boton.addEventListener("click", function (event) {
+            event.preventDefault();
 
-            if (convocatorias.style.display === "none") {
+            if (convocatorias.style.display === "none" || convocatorias.style.display === "") {
                 convocatorias.style.display = "block";
+                convocatorias.scrollIntoView({ behavior: "smooth", block: "start" });
             } else {
                 convocatorias.style.display = "none";
             }
         });
-
-    } else {
-        console.log("No se encontrÃ³ botÃ³n o convocatorias en el HTML");
-    }
-
+    });
 });
