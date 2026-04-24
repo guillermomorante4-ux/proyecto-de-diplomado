@@ -1,0 +1,91 @@
+/* Casilla del formulario */
+.formulario {
+  border: 3px solid #0066cc;
+  background-color: #e6f0ff; /* azul suave */
+  border-radius: 12px;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 600px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Título */
+.formulario h2 {
+  font-size: 2em;
+  color: #0066cc;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Grupos de campos */
+.form-grupo {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Etiquetas */
+.form-grupo label {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Inputs y textarea */
+.form-grupo input,
+.form-grupo textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  margin-top: 8px;
+  border: 2px solid #0066cc;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+  border-color: #ff6600; /* cambia a naranja al enfocar */
+  outline: none;
+  background-color: #fdf2e6;
+}
+
+/* Botón */
+button {
+  background-color: #0066cc;
+  color: white;
+  font-size: 1.2em;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff6600;
+}
+/* Estilo general para los enlaces del menú */
+nav a {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1em;
+  border: 2px solid white;
+  border-radius: 8px;
+  transition: all 0.3s ease; /* animación suave */
+}
+
+/* Efecto al pasar el mouse */
+nav a:hover {
+  background-color: white;
+  color: #595a5c; /* cambia el color del texto */
+  transform: scale(1.1); /* agranda un poco el botón */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* sombra */
+}
+
