@@ -1,0 +1,184 @@
+.contacto-page {
+  background: linear-gradient(180deg, #f2f2f4 0%, #e2e2e6 100%);
+  color: #2f3033;
+  padding-top: 156px;
+}
+
+.contacto-services {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px 0;
+}
+
+.contacto-services-header {
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.contacto-kicker {
+  margin-bottom: 10px;
+  color: #6a6c73;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.contacto-services-header h2 {
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
+  color: #2f3033;
+}
+
+.contacto-main {
+  max-width: 760px;
+  margin: 34px auto 0;
+  padding: 0 20px 24px;
+}
+
+.servicios-contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.servicio {
+  border: 1px solid #dfe2e8;
+  background: linear-gradient(180deg, #ffffff 0%, #f6f7fa 100%);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 14px 28px rgba(34, 35, 38, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.servicio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 32px rgba(34, 35, 38, 0.12);
+}
+
+.servicio h3 {
+  color: #2f3033;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.servicio p {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #4b4d54;
+}
+
+.formulario-card {
+  border: 1px solid #dfe2e8;
+  background: linear-gradient(180deg, #ffffff 0%, #f6f7fa 100%);
+  border-radius: 22px;
+  padding: 30px;
+  box-shadow: 0 16px 30px rgba(34, 35, 38, 0.08);
+  text-align: left;
+}
+
+.formulario-card h2 {
+  font-size: 2rem;
+  color: #2f3033;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subtitulo-contacto {
+  text-align: center;
+  color: #6a6c73;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bfc6d2;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #6b7280;
+  box-shadow: 0 0 0 3px rgba(107, 114, 128, 0.16);
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.campo-otro {
+  display: none;
+}
+
+.campo-otro.show {
+  display: block;
+}
+
+button {
+  background: linear-gradient(135deg, #414247, #232427);
+  color: white;
+  border: none;
+  padding: 13px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #5e6067, #303136);
+  box-shadow: 0 18px 32px rgba(34, 35, 38, 0.18);
+}
+
+.contacto-info {
+  margin-top: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  border-top: 1px solid #d7dbe3;
+  padding-top: 20px;
+}
+
+.contacto-info span {
+  color: #595a5c;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .contacto-page {
+    padding-top: 172px;
+  }
+
+  .servicios-contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  .formulario-card {
+    padding: 22px;
+  }
+}

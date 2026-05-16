@@ -17,6 +17,7 @@ body {
 }
 
 
+/* Header compartido */
 .main-header {
     min-height: 136px;
     display: flex;
