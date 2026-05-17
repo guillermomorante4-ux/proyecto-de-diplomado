@@ -283,3 +283,9 @@
         min-height: 180px;
     }
 }
+.nav-button.active {
+  background-color: #ff6f61; /* color de contraste */
+  color: #fff;
+  font-weight: 600;
+}
+
